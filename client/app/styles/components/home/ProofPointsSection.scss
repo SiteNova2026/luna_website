@@ -1,0 +1,142 @@
+@use "../../abstracts/variables" as *;
+@use "../../include/fontSize" as *;
+
+.proof-points {
+  background: $luna-white;
+  color: $luna-ink;
+}
+
+.proof-points-inner {
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: 36px clamp(28px, 8vw, 112px) 50px;
+}
+
+.proof-metrics {
+  border-bottom: 1px solid $luna-line;
+  border-top: 1px solid $luna-line;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.proof-metric {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+
+  & + & {
+    border-left: 1px solid $luna-line;
+  }
+
+  strong {
+    color: $luna-teal;
+    @extend .fs-proof-stat;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  span {
+    color: $luna-muted;
+    @extend .fs-11px;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+.proof-clients {
+  align-items: center;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(120px, 0.7fr) minmax(0, 2fr);
+  padding-top: 34px;
+
+  > p {
+    color: $luna-green;
+    @extend .fs-9px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    gap: clamp(28px, 6vw, 88px);
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    align-items: center;
+    display: flex;
+    height: 76px;
+    justify-content: center;
+    min-width: 0;
+    width: min(100%, 200px);
+  }
+
+  img {
+    height: 64px;
+    max-width: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .proof-points-inner {
+    padding: 28px 24px 40px;
+  }
+
+  .proof-clients {
+    gap: 22px;
+    grid-template-columns: 1fr;
+    padding-top: 26px;
+
+    ul {
+      gap: 20px;
+    }
+
+    li {
+      height: 64px;
+    }
+
+    img {
+      height: 54px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .proof-points-inner {
+    padding-inline: 20px;
+  }
+
+  .proof-metrics {
+    padding-block: 18px;
+  }
+
+  .proof-metric span {
+    max-width: 90px;
+  }
+
+  .proof-clients ul {
+    gap: 12px;
+  }
+
+  .proof-clients li {
+    height: 54px;
+  }
+
+  .proof-clients img {
+    height: 46px;
+  }
+}

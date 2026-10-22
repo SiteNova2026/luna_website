@@ -1,0 +1,120 @@
+@use "../../abstracts/variables" as *;
+@use "../../include/fontSize" as *;
+
+.why-luna {
+  background: $luna-mint;
+  color: $luna-ink;
+}
+
+.why-luna-inner {
+  align-items: start;
+  display: grid;
+  gap: clamp(48px, 8vw, 128px);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: clamp(72px, 9vw, 112px) clamp(28px, 8vw, 112px);
+}
+
+.why-luna-intro {
+  max-width: 540px;
+}
+
+.why-luna-eyebrow {
+  color: $luna-green;
+  @extend .fs-9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.why-luna-intro h2 {
+  color: $luna-ink;
+  @extend .fs-connected-title;
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.why-luna-summary {
+  color: $luna-muted;
+  @extend .fs-13px;
+  line-height: 1.7;
+  margin: 24px 0 28px;
+  max-width: 420px;
+}
+
+.why-luna-cta {
+  gap: 12px;
+}
+
+.why-luna-list {
+  border-top: 1px solid rgba(11, 116, 101, 0.16);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.why-luna-item {
+  align-items: start;
+  border-bottom: 1px solid rgba(11, 116, 101, 0.16);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 48px minmax(0, 1fr) 18px;
+  padding: 22px 0 24px;
+}
+
+.why-luna-number {
+  color: $luna-green;
+  @extend .fs-12px;
+  font-weight: 700;
+  padding-top: 2px;
+}
+
+.why-luna-copy h3 {
+  color: $luna-ink;
+  @extend .fs-17px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.why-luna-copy p {
+  color: $luna-muted;
+  @extend .fs-13px;
+  line-height: 1.65;
+  margin: 8px 0 0;
+  max-width: 640px;
+}
+
+.why-luna-arrow {
+  color: rgba(11, 116, 101, 0.52);
+  margin-top: 1px;
+}
+
+@media (max-width: 767px) {
+  .why-luna-inner {
+    gap: 42px;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 64px 24px;
+  }
+
+  .why-luna-intro h2 {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-luna-inner {
+    padding-inline: 20px;
+  }
+
+  .why-luna-item {
+    gap: 12px;
+    grid-template-columns: 34px minmax(0, 1fr) 16px;
+    padding-block: 20px;
+  }
+}

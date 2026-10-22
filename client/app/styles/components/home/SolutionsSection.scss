@@ -12,6 +12,85 @@ $map-w: 1211;
   color: $luna-ink;
 }
 
+.solutions-showcase {
+  background: #f7f6f1;
+  color: $luna-ink;
+}
+
+.solutions-showcase-inner {
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: 72px clamp(28px, 7vw, 100px) 76px;
+}
+
+.solutions-showcase-heading {
+  align-items: center;
+  display: grid;
+  gap: clamp(40px, 8vw, 112px);
+  grid-template-columns: minmax(0, 1.2fr) minmax(220px, 0.65fr);
+
+  h2 {
+    color: $luna-ink;
+    @extend .fs-system-title;
+    font-weight: 650;
+    letter-spacing: -0.045em;
+    line-height: 1.08;
+    margin: 12px 0 0;
+    max-width: 560px;
+  }
+}
+
+.solutions-showcase-eyebrow {
+  color: $luna-green;
+  @extend .fs-8px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.solutions-showcase-copy {
+  color: $luna-muted;
+  @extend .fs-13px;
+  line-height: 1.65;
+  margin: 18px 0 0;
+  max-width: 360px;
+}
+
+.solutions-showcase-modules {
+  border-bottom: 1px solid $luna-paper-line;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  margin: 22px 0 14px;
+  padding: 0;
+
+  li {
+    color: $luna-muted;
+    @extend .fs-9px;
+    font-weight: 600;
+    padding: 12px 8px;
+    text-align: center;
+  }
+}
+
+.solutions-showcase-preview {
+  .erp {
+    max-width: none;
+  }
+
+  .ghost {
+    background: #dcebe5;
+    inset: 12px -10px -10px 10px;
+    opacity: 0.42;
+  }
+
+  .window {
+    border-radius: 4px;
+    box-shadow: 0 18px 40px -22px rgba(15, 60, 45, 0.22), 0 1px 3px rgba(15, 60, 45, 0.06);
+  }
+}
+
 .system-inner {
   margin-inline: auto;
   max-width: 1440px;
@@ -182,6 +261,23 @@ $map-w: 1211;
 }
 
 @media (max-width: 767px) {
+  .solutions-showcase-inner {
+    padding: 56px 24px 64px;
+  }
+
+  .solutions-showcase-heading {
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-showcase-copy {
+    margin-top: 0;
+  }
+
+  .solutions-showcase-modules {
+    margin-top: 20px;
+  }
+
   .system-inner {
     padding: 56px 24px 64px;
   }
@@ -255,5 +351,15 @@ $map-w: 1211;
       height: 6px;
       width: 6px;
     }
+  }
+}
+
+@media (max-width: 520px) {
+  .solutions-showcase-inner {
+    padding-inline: 20px;
+  }
+
+  .solutions-showcase-modules {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

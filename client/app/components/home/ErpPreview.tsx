@@ -32,9 +32,17 @@ const statusClass = {
   Low: "low",
 } as const;
 
-export default function ErpPreview() {
+type ErpPreviewProps = {
+  chartGradientId?: string;
+  ariaLabel?: string;
+};
+
+export default function ErpPreview({
+  chartGradientId = "lunaFill",
+  ariaLabel = "Luna ERP inventory dashboard preview",
+}: ErpPreviewProps) {
   return (
-    <div className="erp" role="region" aria-label="Luna ERP inventory dashboard preview">
+    <div className="erp" role="region" aria-label={ariaLabel}>
       <div className="ghost" aria-hidden="true" />
 
       <div className="window">
@@ -108,14 +116,14 @@ export default function ErpPreview() {
               </div>
               <svg viewBox="0 0 300 70" preserveAspectRatio="none" role="img" aria-label="Stock movement trend line">
                 <defs>
-                  <linearGradient id="lunaFill" x1="0" x2="0" y1="0" y2="1">
+                  <linearGradient id={chartGradientId} x1="0" x2="0" y1="0" y2="1">
                       <stop offset="0" stopColor="currentColor" stopOpacity="0.22" />
                       <stop offset="1" stopColor="currentColor" stopOpacity="0" />
                   </linearGradient>
                 </defs>
                 <path
                   d="M0 52 C 15 40, 25 56, 45 50 S 75 30, 95 44 S 125 56, 145 38 S 175 22, 195 38 S 225 50, 245 28 S 275 24, 300 12 L300 70 L0 70 Z"
-                  fill="url(#lunaFill)"
+                  fill={`url(#${chartGradientId})`}
                 />
                 <path
                   d="M0 52 C 15 40, 25 56, 45 50 S 75 30, 95 44 S 125 56, 145 38 S 175 22, 195 38 S 225 50, 245 28 S 275 24, 300 12"

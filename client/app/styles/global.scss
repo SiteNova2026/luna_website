@@ -8,7 +8,11 @@
 @use './components/home/Hero.scss';
 @use './components/home/SolutionsSection.scss';
 @use './components/home/ConnectedSystemSection.scss';
+@use './components/home/WhyChooseSection.scss';
+@use './components/home/FullServiceSection.scss';
+@use './components/home/ProofPointsSection.scss';
 @use './components/home/IndustriesSection.scss';
+@use './components/home/ContactFooter.scss';
 @use './abstracts/breakpoints' as *;
 
 html {

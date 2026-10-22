@@ -64,6 +64,18 @@
 	font-size: 21px;
 }
 
+.fs-proof-stat {
+	font-size: 38px;
+
+	@include media-min-lg {
+		font-size: 46px;
+	}
+
+	@include media-min-xxl {
+		font-size: 48px;
+	}
+}
+
 .fs-hero-title {
 	font-size: 38px;
 
@@ -117,6 +129,18 @@
 
 	@include media-min-xxl {
 		font-size: 58px;
+	}
+}
+
+.fs-contact-title {
+	font-size: 36px;
+
+	@include media-min-lg {
+		font-size: 40px;
+	}
+
+	@include media-min-xl {
+		font-size: 44px;
 	}
 }
 

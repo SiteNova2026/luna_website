@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/breakpoints' as *;
+@use './fontSize' as *;
+
+a,
+button {
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-flex;
+  @extend .fs-12px;
+  font-weight: 700;
+  gap: 10px;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+
+  &:focus-visible {
+    outline: 2px solid $luna-green;
+    outline-offset: 3px;
+  }
+}
+
+.btn-primary {
+  background: $luna-green;
+  border-color: $luna-green;
+  color: $luna-white;
+
+  &:hover {
+    background: $luna-green-dark;
+    border-color: $luna-green-dark;
+  }
+}
+
+.btn-secondary {
+  background: $luna-white;
+  border-color: $luna-line-strong;
+  color: $luna-ink;
+
+  &:hover {
+    border-color: $luna-green;
+    color: $luna-green;
+  }
+}
+
+.btn-compact {
+  min-height: 38px;
+  padding-inline: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}

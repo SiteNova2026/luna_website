@@ -1,0 +1,32 @@
+@use "../../abstracts/variables" as *;
+@use "../../include/fontSize" as *;
+
+.wordmark {
+  display: block;
+  height: auto;
+  width: 92px;
+}
+
+.navLink,
+.activeNav {
+  color: $luna-nav-muted;
+  @extend .fs-11px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+
+  &:hover {
+    color: $luna-green;
+  }
+}
+
+.activeNav {
+  color: $luna-green;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navLink,
+  .activeNav {
+    transition: none;
+  }
+}

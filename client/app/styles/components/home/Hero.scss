@@ -1,0 +1,486 @@
+@use "../../abstracts/variables" as *;
+@use "../../include/fontSize" as *;
+
+@mixin overline {
+  color: $luna-faint-light;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.luna-hero {
+  background: $luna-white;
+  color: $luna-ink;
+  isolation: isolate;
+  min-height: calc(100svh - 62px);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-inner {
+  align-items: center;
+  display: grid;
+  gap: clamp(24px, 4vw, 52px);
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  margin-inline: auto;
+  max-width: 1440px;
+  min-height: inherit;
+  padding: 42px clamp(28px, 6.5vw, 96px) 54px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-copy {
+  max-width: 560px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-eyebrow {
+  align-items: center;
+  color: $luna-green;
+  display: flex;
+  @extend .fs-11px;
+  font-weight: 700;
+  gap: 10px;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: uppercase;
+
+  span {
+    background: $luna-amber;
+    flex: 0 0 15px;
+    height: 1px;
+  }
+}
+
+.hero-title {
+  color: $luna-ink;
+  @extend .fs-hero-title;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+  margin: 24px 0 0;
+
+  > span {
+    display: block;
+  }
+}
+
+.hero-title-accent {
+  color: $luna-teal;
+}
+
+.hero-description {
+  color: $luna-muted;
+  @extend .fs-15px;
+  line-height: 1.7;
+  margin: 18px 0 0;
+  max-width: 440px;
+}
+
+.hero-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.hero-footnote,
+.hero-caption {
+  align-items: center;
+  color: $luna-faint;
+  display: flex;
+  @extend .fs-10px;
+  gap: 10px;
+}
+
+.hero-footnote {
+  margin: 34px 0 0;
+
+  span {
+    background: $luna-amber;
+    flex: 0 0 20px;
+    height: 1px;
+  }
+}
+
+.hero-product {
+  min-width: 0;
+  position: relative;
+}
+
+.hero-caption {
+  margin: 15px 0 0;
+
+  span {
+    border: 1px solid $luna-green;
+    border-radius: 50%;
+    flex: 0 0 7px;
+    height: 7px;
+  }
+}
+
+.hero-pagination {
+  align-items: center;
+  bottom: 17px;
+  color: $luna-muted;
+  display: flex;
+  @extend .fs-9px;
+  gap: 9px;
+  position: absolute;
+  right: max(4vw, calc((100vw - 1280px) / 2));
+  z-index: 2;
+
+  i {
+    background: $luna-amber;
+    height: 1px;
+    width: 9px;
+  }
+}
+
+.luna-disc {
+  aspect-ratio: 1;
+  background: $luna-mint;
+  border-radius: 50%;
+  opacity: 0.85;
+  position: absolute;
+  right: 40px;
+  top: 25px;
+  width: min(55vw, 500px);
+  z-index: 0;
+}
+
+.erp {
+  margin-inline: auto;
+  max-width: 640px;
+  position: relative;
+  width: 100%;
+
+  .ghost {
+    background: $luna-mint-shadow;
+    border-radius: 8px;
+    inset: 18px -16px -16px 16px;
+    opacity: 0.7;
+    position: absolute;
+  }
+
+  .window {
+    background: $luna-white;
+    border-radius: 7px;
+    box-shadow: 0 24px 50px -20px $luna-shadow, 0 2px 6px $luna-shadow-soft;
+    color: $luna-ink;
+    @extend .fs-9px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .topbar {
+    align-items: center;
+    border-bottom: 1px solid $luna-line;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+  }
+
+  .brand,
+  .team {
+    align-items: center;
+    display: flex;
+    gap: 6px;
+  }
+
+  .brand {
+    @extend .fs-10px;
+  }
+
+  .logo {
+    align-items: center;
+    background: $luna-mint;
+    border-radius: 5px;
+    color: $luna-green;
+    display: inline-flex;
+    height: 20px;
+    justify-content: center;
+    width: 20px;
+  }
+
+  .workspace {
+    color: $luna-faint-light;
+  }
+
+  .team {
+    color: $luna-muted;
+  }
+
+  .avatar {
+    align-items: center;
+    background: $luna-line;
+    border-radius: 50%;
+    display: inline-flex;
+    @extend .fs-6px;
+    font-weight: 600;
+    height: 16px;
+    justify-content: center;
+    width: 16px;
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr);
+  }
+
+  .sidebar {
+    border-right: 1px solid $luna-line;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    padding: 10px 8px;
+
+    ul {
+      display: grid;
+      gap: 2px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      align-items: center;
+      border-radius: 4px;
+      color: $luna-muted;
+      display: flex;
+      gap: 8px;
+      padding: 7px 8px;
+
+      &.active {
+        background: $luna-mint-soft;
+        color: $luna-green;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .side-foot {
+    color: $luna-muted;
+    display: grid;
+    @extend .fs-6px;
+    letter-spacing: 0.08em;
+    padding: 0 8px 4px;
+  }
+
+  .main {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+    padding: 12px 14px 14px;
+  }
+
+  .head {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      color: $luna-ink-strong;
+      @extend .fs-12px;
+      font-weight: 500;
+      margin: 4px 0 0;
+    }
+  }
+
+  .overline,
+  .chart-head span,
+  .records th {
+    @include overline;
+    @extend .fs-7px;
+  }
+
+  .select {
+    background: $luna-white;
+    border: 1px solid $luna-line;
+    border-radius: 4px;
+    color: $luna-muted;
+    font: inherit;
+    @extend .fs-8px;
+    padding: 5px 10px;
+  }
+
+  .stats {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    > div {
+      border: 1px solid $luna-line;
+      border-radius: 5px;
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+      padding: 8px 9px;
+    }
+
+    span {
+      color: $luna-muted;
+      @extend .fs-7-5px;
+    }
+
+    strong {
+      color: $luna-ink-strong;
+      @extend .fs-15px;
+      font-weight: 600;
+    }
+
+    small {
+      @extend .fs-11px;
+      font-weight: 500;
+    }
+
+    em {
+      color: $luna-muted;
+      @extend .fs-7px;
+      font-style: normal;
+    }
+
+    em.up {
+      color: $luna-green;
+    }
+
+    small.critical {
+      color: $luna-amber-dark;
+      @extend .fs-8px;
+    }
+  }
+
+  .chart,
+  .records {
+    border: 1px solid $luna-line;
+    border-radius: 5px;
+    padding: 8px 9px;
+  }
+
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+
+    strong {
+      @extend .fs-8px;
+      font-weight: 600;
+    }
+  }
+
+  .chart svg {
+    color: $luna-green;
+    display: block;
+    height: 62px;
+    width: 100%;
+  }
+
+  .xaxis {
+    color: $luna-faint-light;
+    display: flex;
+    @extend .fs-6-5px;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+
+  .records {
+    border: 0;
+    padding: 0 2px;
+
+    .chart-head {
+      margin-bottom: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th {
+      border-bottom: 1px solid $luna-line;
+      border-top: 1px solid $luna-line;
+      padding: 5px 0;
+      text-align: left;
+    }
+
+    td {
+      border-bottom: 1px solid $luna-line;
+      color: $luna-muted;
+      padding: 7px 0;
+
+      &:first-child {
+        color: $luna-ink;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .pill {
+    border-radius: 99px;
+    display: inline-block;
+    @extend .fs-7px;
+    font-weight: 500;
+    padding: 2px 7px;
+
+    &.in-stock {
+      background: $luna-green-soft;
+      color: $luna-green;
+    }
+
+    &.reorder {
+      background: $luna-amber-soft;
+      color: $luna-amber-dark;
+    }
+
+    &.low {
+      background: $luna-red-soft;
+      color: $luna-red;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-inner {
+    gap: 24px;
+    padding-inline: 5vw;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .luna-hero {
+    min-height: auto;
+  }
+
+  .hero-inner {
+    gap: 40px;
+    grid-template-columns: 1fr;
+    padding: 48px 24px 72px;
+  }
+
+  .hero-footnote {
+    margin-top: 28px;
+  }
+
+  .hero-product {
+    margin-inline: -4px;
+  }
+
+  .hero-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .erp .body {
+    grid-template-columns: 1fr;
+  }
+
+  .erp .sidebar {
+    display: none;
+  }
+}

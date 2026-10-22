@@ -1,0 +1,26 @@
+@use './abstracts/variables';
+@use './abstracts/breakpoints';
+@use './include/fontSize.scss';
+@use './include/button.scss';
+@use './include/animate.scss';
+@use './commonStyle.scss';
+@use './components/home/Header.scss';
+@use './components/home/Hero.scss';
+@use './components/home/SolutionsSection.scss';
+@use './components/home/ConnectedSystemSection.scss';
+@use './components/home/IndustriesSection.scss';
+@use './abstracts/breakpoints' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  .c-width {
+    width: 85%;
+    max-width: 1600px;
+    margin: auto;
+  }
+}

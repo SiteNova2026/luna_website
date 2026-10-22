@@ -1,9 +1,17 @@
+import Hero from "./components/home/Hero";
+import ConnectedSystemSection from "./components/home/ConnectedSystemSection";
+import IndustriesSection from "./components/home/IndustriesSection";
+import { SiteHeader } from "./layout/site-header";
+import { LunaSystemSection } from "./components/home/SolutionDiagram/LunaSystemSection";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-slate-900">
-      <h1 className="text-4xl font-bold text-white">
-        Luna Website
-      </h1>
+    <main className="min-h-screen bg-white text-[#202a23]">
+      <SiteHeader />
+      <Hero/>
+      <ConnectedSystemSection />
+       <LunaSystemSection />
+      <IndustriesSection />
     </main>
   );
-}
+} 

@@ -1,0 +1,305 @@
+@use '../abstracts/breakpoints' as *;
+
+.fs-5px {
+	font-size: 5px;
+}
+
+.fs-6px {
+	font-size: 6px;
+}
+
+.fs-6-5px {
+	font-size: 6.5px;
+}
+
+.fs-7px {
+	font-size: 7px;
+}
+
+.fs-7-5px {
+	font-size: 7.5px;
+}
+
+.fs-8px {
+	font-size: 8px;
+}
+
+.fs-9px {
+	font-size: 9px;
+}
+
+.fs-10px {
+	font-size: 10px;
+}
+
+.fs-11px {
+	font-size: 11px;
+}
+
+.fs-12px {
+	font-size: 14px;
+}
+
+.fs-13px {
+	font-size: 13px;
+}
+
+.fs-14px {
+	font-size: 14px;
+}
+
+.fs-15px {
+	font-size: 15px;
+}
+
+.fs-17px {
+	font-size: 17px;
+}
+
+.fs-18px {
+	font-size: 18px;
+}
+
+.fs-21px {
+	font-size: 21px;
+}
+
+.fs-hero-title {
+	font-size: 38px;
+
+	@include media-min-xs {
+		font-size: 42px;
+	}
+
+	@include media-min-sm {
+		font-size: 52px;
+	}
+
+	@include media-min-md-x {
+		font-size: 40px;
+	}
+
+	@include media-min-lg {
+		font-size: 46px;
+	}
+
+	@include media-min-xl {
+		font-size: 55px;
+	}
+
+	@include media-min-3-xl {
+		font-size: 58px;
+	}
+}
+
+.fs-connected-title {
+	font-size: 34px;
+
+	@include media-min-xs {
+		font-size: 38px;
+	}
+
+	@include media-min-sm {
+		font-size: 46px;
+	}
+
+	@include media-min-md-x {
+		font-size: 36px;
+	}
+
+	@include media-min-lg {
+		font-size: 42px;
+	}
+
+	@include media-min-xl {
+		font-size: 50px;
+	}
+
+	@include media-min-xxl {
+		font-size: 58px;
+	}
+}
+
+.fs-system-title {
+	font-size: 30px;
+
+	@include media-min-xs {
+		font-size: 34px;
+	}
+
+	@include media-min-sm {
+		font-size: 36px;
+	}
+
+	@include media-min-md-x {
+		font-size: 30px;
+	}
+
+	@include media-min-lg {
+		font-size: 34px;
+	}
+
+	@include media-min-xl {
+		font-size: 36px;
+	}
+}
+
+.fs-industries-title {
+	font-size: 30px;
+
+	@include media-min-lg {
+		font-size: 32px;
+	}
+
+	@include media-min-xl {
+		font-size: 38px;
+	}
+
+	@include media-min-xxl {
+		font-size: 40px;
+	}
+}
+
+.fs-industry-title {
+	font-size: 24px;
+
+	@include media-min-xs {
+		font-size: 28px;
+	}
+
+	@include media-min-sm {
+		font-size: 30px;
+	}
+
+	@include media-min-md-x {
+		font-size: 24px;
+	}
+
+	@include media-min-lg {
+		font-size: 28px;
+	}
+
+	@include media-min-xl {
+		font-size: 32px;
+	}
+}
+
+@mixin fs-luna-eyebrow {
+	font-size: 11px;
+
+	@include media-min-xxl {
+		font-size: 12px;
+	}
+
+	@include media-min-3-xl {
+		font-size: 13px;
+	}
+}
+
+@mixin fs-luna-title {
+	font-size: 28px;
+
+	@include media-min-xs {
+		font-size: 36px;
+	}
+
+	@include media-min-md {
+		font-size: 40px;
+	}
+
+	@include media-min-lg {
+		font-size: 39px;
+	}
+
+	@include media-min-xl {
+		font-size: 47px;
+	}
+
+	@include media-min-xxl {
+		font-size: 55px;
+	}
+
+	@include media-min-3-xl {
+		font-size: 58px;
+	}
+
+	@include media-min-4-xl {
+		font-size: 62px;
+	}
+}
+
+@mixin fs-luna-center-title {
+	font-size: 14px;
+
+	@include media-min-xxl {
+		font-size: 16px;
+	}
+
+	@include media-min-3-xl {
+		font-size: 17px;
+	}
+}
+
+@mixin fs-luna-center-note {
+	font-size: 7.5px;
+
+	@include media-min-xl {
+		font-size: 8.5px;
+	}
+
+	@include media-min-3-xl {
+		font-size: 9.5px;
+	}
+}
+
+@mixin fs-luna-card-label {
+	font-size: 11px;
+
+	@include media-min-4-xl {
+		font-size: 12px;
+	}
+}
+
+.fs-map-core-title {
+	font-size: 12px;
+
+	@include media-max-md {
+		font-size: 15px;
+	}
+}
+
+.fs-map-core-note {
+	font-size: 6px;
+
+	@include media-max-md {
+		font-size: 8px;
+	}
+}
+
+.fs-map-node {
+	font-size: 8px;
+
+	@include media-max-md {
+		font-size: 11px;
+	}
+}
+
+.fs-7px-767 {
+	font-size: 9px;
+
+	@include media-max-md {
+		font-size: 7px;
+	}
+}
+
+@media (max-width: 640px) {
+	.fs-11px-640 { font-size: 11px; }
+	.fs-21px-640 { font-size: 21px; }
+	.fs-8px-640 { font-size: 8px; }
+	.fs-7px-640 { font-size: 7px; }
+	.fs-6px-640 { font-size: 6px; }
+	.fs-12px-640 { font-size: 12px; }
+	.fs-9px-640 { font-size: 9px; }
+	.fs-5px-640 { font-size: 5px; }
+}
+

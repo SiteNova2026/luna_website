@@ -6,6 +6,40 @@
   width: 92px;
 }
 
+.mobileMenuToggle {
+  align-items: center;
+  background: transparent;
+  border: 1px solid $luna-line;
+  border-radius: 4px;
+  color: $luna-ink;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+
+  &:focus-visible {
+    outline: 2px solid $luna-green;
+    outline-offset: 2px;
+  }
+}
+
+.mobileNavigation {
+  padding: 8px 0 18px;
+
+  > a:not(.headerCta) {
+    align-items: center;
+    border-bottom: 1px solid $luna-line;
+    display: flex;
+    min-height: 44px;
+  }
+
+  .headerCta {
+    justify-content: center;
+    margin-top: 10px;
+    min-height: 44px;
+  }
+}
+
 .navLink,
 .activeNav {
   color: $luna-nav-muted;

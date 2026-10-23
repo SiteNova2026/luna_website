@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Luna | ERP Solutions",
   description: "Connected ERP solutions built around your operation.",
+  icons: {
+    icon: "/public/images/fav.jpeg",
+    shortcut: "/public/images/fav.jpeg",
+    apple: "/public/images/fav.jpeg",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

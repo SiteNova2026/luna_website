@@ -1,15 +1,7 @@
 "use client";
-
-import type { CSSProperties } from "react";
 import { LunaDiagram } from "./LunaDiagram";
 import { useInViewReveal } from "./useInViewReveal";
 import "../../../styles/components/home/lunaDiagram.scss";
-
-const HEADING_LINES = [
-  "One integrated system,",
-  "connected across",
-  "every process",
-];
 
 export function LunaSystemSection() {
   const { ref, armed, revealed } = useInViewReveal<HTMLElement>(0.12);
@@ -29,11 +21,11 @@ export function LunaSystemSection() {
           <div>
             <p className="luna-eyebrow fs-luna-eyebrow">Industry-ready. Business-specific.</p>
             <h2 id="industries-title" className="luna-heading fs-luna-title">One integrated system,<br/>
-               connected across every process</h2>
+               connected <span className="hero-title-accent">across every process</span></h2>
           </div>
         </div>
       </section>
-      <div className="luna-inner">
+      <div className="luna-inner lg:mt-5 xl:mt-7">
         <LunaDiagram />
       </div>
     </section>

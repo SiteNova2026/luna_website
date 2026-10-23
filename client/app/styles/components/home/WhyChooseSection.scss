@@ -20,13 +20,6 @@
   max-width: 540px;
 }
 
-.why-luna-eyebrow {
-  color: $luna-green;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  margin: 0 0 20px;
-  text-transform: uppercase;
-}
 
 .why-luna-intro h2 {
   color: $luna-ink;
@@ -43,9 +36,6 @@
   max-width: 420px;
 }
 
-.why-luna-cta {
-  gap: 12px;
-}
 
 .why-luna-list {
   border-top: 1px solid rgba(11, 116, 101, 0.16);
@@ -84,10 +74,6 @@
   max-width: 640px;
 }
 
-.why-luna-arrow {
-  color: rgba(11, 116, 101, 0.52);
-  margin-top: 1px;
-}
 
 @media (max-width: 767px) {
   .why-luna-inner {

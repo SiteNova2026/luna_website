@@ -33,13 +33,6 @@
 
 /* ---------- Intro ---------- */
 
-.luna-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 46.6%) minmax(0, 1fr);
-  align-items: end;
-  column-gap: clamp(24px, 4vw, 64px);
-  padding-inline: clamp(0px, 2.4vw, 34px);
-}
 
 .luna-eyebrow {
   margin: 0;
@@ -60,18 +53,6 @@
   text-wrap: balance;
 }
 
-.luna-heading-line {
-  display: block;
-}
-
-.luna-word {
-  display: inline-block;
-  white-space: pre;
-}
-
-.luna-word + .luna-word {
-  margin-left: 0.26em;
-}
 
 /* ---------- Diagram ---------- */
 

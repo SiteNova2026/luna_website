@@ -41,7 +41,7 @@ export default function FullServiceSection() {
       <div className="full-service-inner">
         <div className="full-service-intro">
           <h2 id="full-service-title" className="fs-connected-title">
-            Why Luna ERP Solutions?
+            Why <span className="hero-title-accent">Luna</span> ERP Solutions?
           </h2>
           <p className="full-service-summary fs-13px">
             Business-Focused Technology

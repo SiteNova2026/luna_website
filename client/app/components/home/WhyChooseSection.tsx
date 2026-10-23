@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-
 const reasons = [
   {
     title: "WhatsApp Integration",
@@ -46,8 +43,9 @@ export default function WhyChooseSection() {
     <section className="why-luna" id="why-luna" aria-labelledby="why-luna-title">
       <div className="why-luna-inner">
         <div className="why-luna-intro">
+          <p></p>
           <h2 id="why-luna-title" className="fs-connected-title">
-           Seamless Integration. One Connected Ecosystem
+           Seamless Integration. One <span className="hero-title-accent">Connected Ecosystem</span>
           </h2>
           <p className="why-luna-summary fs-13px">
             Our team consists of certified experts with years of experience.

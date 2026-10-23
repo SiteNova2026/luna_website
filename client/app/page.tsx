@@ -13,24 +13,24 @@ import {
   WhyChooseSection,
 } from "./components/home";
 
-const homeSections: readonly ComponentType[] = [
-  Hero,
-  ConnectedSystemSection,
-  LunaSystemSection,
-  IndustriesSection,
-  SolutionsShowcase,
-  WhyChooseSection,
-  FullServiceSection,
-  ProofPointsSection,
-  ContactSection,
+const homeSections: readonly { id: string; component: ComponentType }[] = [
+  { id: "hero", component: Hero },
+  { id: "connected-system", component: ConnectedSystemSection },
+  { id: "luna-system", component: LunaSystemSection },
+  { id: "industries", component: IndustriesSection },
+  { id: "solutions-showcase", component: SolutionsShowcase },
+  { id: "why-choose", component: WhyChooseSection },
+  { id: "full-service", component: FullServiceSection },
+  { id: "proof-points", component: ProofPointsSection },
+  { id: "contact", component: ContactSection },
 ];
 
 export default function Home() {
   return (
     <main id="home" className="min-h-screen bg-white text-[#202a23]">
       <SiteHeader />
-      {homeSections.map((Section) => (
-        <Section key={Section.name} />
+      {homeSections.map(({ id, component: Section }) => (
+        <Section key={id} />
       ))}
       <SiteFooter />
     </main>

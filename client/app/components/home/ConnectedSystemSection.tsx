@@ -34,12 +34,12 @@ export default function ConnectedSystemSection() {
     <section className="connected-section" aria-labelledby="connected-title">
       <div className="connected-heading">
         <h2 id="connected-title" className="fs-connected-title">
-          Smart ERP Solutions for a Smarter Business
+          Smart ERP Solutions for a <span className='hero-title-accent'>Smarter Business</span> 
         </h2>
-        <p>We deliver flexible, industry-focused digital solutions designed around your business requirements.</p>
+        <p className="mb-2">We deliver flexible, industry-focused digital solutions designed around your business requirements.</p>
       </div>
 
-      <div>
+      <div className="mt-3">
            <ol className="full-service-list">
           {services.map((service, index) => (
             <li className="full-service-item" key={service.title}>

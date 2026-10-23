@@ -11,7 +11,7 @@ export default function ProofPointsSection() {
   return (
     <section className="proof-points" aria-label="Luna ERP results and clients">
       <div className="proof-points-inner">
-       <h2 className="proof-clients-title fs-42px">Trusted by</h2>
+       <h2 className="fs-21px text-center">Trusted by</h2>
          
         <div className="proof-clients">
           <ul aria-label="Luna ERP clients">
@@ -20,8 +20,8 @@ export default function ProofPointsSection() {
                 <Image
                   src={client.src}
                   alt={client.alt}
-                  width={220}
-                  height={80}
+                  width={240}
+                  height={100}
                   sizes="(max-width: 600px) 28vw, 220px"
                 />
               </li>

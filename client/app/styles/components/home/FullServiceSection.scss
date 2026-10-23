@@ -20,14 +20,6 @@
   max-width: 500px;
 }
 
-.full-service-eyebrow {
-  color: $luna-green;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  line-height: 1.5;
-  margin: 0 0 22px;
-  text-transform: uppercase;
-}
 
 .full-service-intro h2 {
   color: $luna-ink;
@@ -82,14 +74,6 @@
   max-width: 720px;
 }
 
-.full-service-next {
-  align-items: center;
-  color: $luna-green;
-  display: flex;
-  font-weight: 700;
-  gap: 7px;
-  margin: 0 0 7px;
-}
 
 @media (max-width: 767px) {
   .full-service-inner {

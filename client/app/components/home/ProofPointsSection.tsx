@@ -6,7 +6,7 @@ const clients = [
   { src: "/images/astro.jpeg", alt: "Astro Bridge International" },
   { src: "/images/taste.jpeg", alt: "Taste Pizza" },
 ];
-
+console.log(clients);
 export default function ProofPointsSection() {
   return (
     <section className="proof-points" aria-label="Luna ERP results and clients">

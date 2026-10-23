@@ -16,27 +16,27 @@ export default function SiteFooter() {
           <a href="#home" aria-label="Luna home">
             <Image src="/images/logo.png" alt="Luna" width={161} height={74} />
           </a>
-          <p>Customized ERP solutions for manufacturing, construction, RMC, and more. One platform for every part of your business.</p>
+          <p className="fs-10px">Customized ERP solutions for manufacturing, construction, RMC, and more. One platform for every part of your business.</p>
         </div>
 
         <nav className="site-footer-nav" aria-label="Footer navigation">
-          <p className="site-footer-heading">Explore</p>
+          <p className="site-footer-heading fs-8px">Explore</p>
           {footerLinks.map((link) => (
-            <a href={link.href} key={link.label}>{link.label}</a>
+            <a className="fs-9px" href={link.href} key={link.label}>{link.label}</a>
           ))}
         </nav>
 
         <div className="site-footer-office">
-          <p className="site-footer-heading">Head Office</p>
-          <address>1094, CBH Road, Nagercoil-629001,<br />Tamil Nadu, India.</address>
-          <a href="mailto:marketing@lunaerpsolution.com">marketing@lunaerpsolution.com</a>
-          <a href="tel:+918610133882">+91 8610133882</a>
+          <p className="site-footer-heading fs-8px">Head Office</p>
+          <address className="fs-9px">1094, CBH Road, Nagercoil-629001,<br />Tamil Nadu, India.</address>
+          <a className="fs-9px" href="mailto:marketing@lunaerpsolution.com">marketing@lunaerpsolution.com</a>
+          <a className="fs-9px" href="tel:+918610133882">+91 8610133882</a>
         </div>
       </div>
 
       <div className="site-footer-bottom">
-        <p>2026 © Luna IT Solutions. All rights reserved.</p>
-        <a href="#home">Back to top ↑</a>
+        <p className="fs-8px">2026 © Luna IT Solutions. All rights reserved.</p>
+        <a className="fs-8px" href="#home">Back to top ↑</a>
       </div>
     </footer>
   );

@@ -35,14 +35,12 @@
 
   strong {
     color: $luna-teal;
-    @extend .fs-proof-stat;
     font-weight: 700;
     line-height: 1;
   }
 
   span {
     color: $luna-muted;
-    @extend .fs-11px;
     margin-top: 8px;
     text-align: center;
   }
@@ -57,7 +55,6 @@
 
   > p {
     color: $luna-green;
-    @extend .fs-9px;
     font-weight: 700;
     letter-spacing: 0.15em;
     margin: 0;

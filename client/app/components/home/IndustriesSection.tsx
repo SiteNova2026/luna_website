@@ -45,10 +45,10 @@ export default function IndustriesSection() {
     <section className="industries-section" id="industries" aria-labelledby="industries-title">
       <div className="industries-heading">
         <div>
-          <p>Industry-ready. Business-specific.</p>
-          <h2 id="industries-title">Industries we serve</h2>
+          <p className="industries-eyebrow fs-9px">Industry-ready. Business-specific.</p>
+          <h2 id="industries-title" className="fs-industries-title">Industries we serve</h2>
         </div>
-        <p>One flexible platform, built to meet the real demands of your industry.</p>
+        <p className="industries-sub fs-13px">One flexible platform, built to meet the real demands of your industry.</p>
       </div>
 
       <div className="industry-list">
@@ -56,18 +56,18 @@ export default function IndustriesSection() {
           <article className={`industry-row ${index % 2 === 1 ? "industry-row-reverse" : ""}`} key={industry.title}>
             <div className="industry-image">
               <Image src={industry.image} alt={industry.alt} fill sizes="(max-width: 767px) 100vw, 42vw" />
-              <span className="industry-index">{String(index + 1).padStart(2, "0")} / 06</span>
+              <span className="industry-index fs-10px">{String(index + 1).padStart(2, "0")} / 06</span>
             </div>
             <div className="industry-copy">
-              <p className="industry-number">{String(index + 1).padStart(2, "0")}<i /></p>
-              <h3>{industry.title}</h3>
-              <p className="industry-description">{industry.description}</p>
+              <p className="industry-number fs-9px">{String(index + 1).padStart(2, "0")}<i /></p>
+              <h3 className="fs-industry-title">{industry.title}</h3>
+              <p className="industry-description fs-12px">{industry.description}</p>
               <ul className="industry-features">
                 {industry.features.map((feature) => (
-                  <li key={feature}><Check size={10} aria-hidden="true" />{feature}</li>
+                  <li key={feature} className="fs-10px"><Check size={10} aria-hidden="true" />{feature}</li>
                 ))}
               </ul>
-              <Link href="#contact" className="industry-link">
+              <Link href="#contact" className="industry-link fs-12px">
                 Discuss your requirements <ArrowRight size={14} aria-hidden="true" />
               </Link>
             </div>

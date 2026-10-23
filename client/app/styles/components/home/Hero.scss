@@ -39,7 +39,6 @@
   align-items: center;
   color: $luna-green;
   display: flex;
-  @extend .fs-11px;
   font-weight: 700;
   gap: 10px;
   letter-spacing: 0.12em;
@@ -56,7 +55,6 @@
 
 .hero-title {
   color: $luna-ink;
-  @extend .fs-hero-title;
   font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 1.02;
@@ -73,7 +71,6 @@
 
 .hero-description {
   color: $luna-muted;
-  @extend .fs-15px;
   line-height: 1.7;
   margin: 18px 0 0;
   max-width: 440px;
@@ -92,7 +89,6 @@
   align-items: center;
   color: $luna-faint;
   display: flex;
-  @extend .fs-10px;
   gap: 10px;
 }
 

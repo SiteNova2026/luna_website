@@ -20,7 +20,6 @@
   max-width: 440px;
 
   h2 {
-    @extend .fs-contact-title;
     font-weight: 650;
     letter-spacing: -0.04em;
     line-height: 1.05;
@@ -32,7 +31,6 @@
 .contact-eyebrow,
 .contact-label {
   color: $luna-green;
-  @extend .fs-8px;
   font-weight: 700;
   letter-spacing: 0.15em;
   margin: 0;
@@ -41,7 +39,6 @@
 
 .contact-description {
   color: $luna-muted;
-  @extend .fs-12px;
   line-height: 1.7;
   margin: 0;
   max-width: 380px;
@@ -54,7 +51,6 @@
 
   address {
     color: $luna-muted;
-    @extend .fs-10px;
     font-style: normal;
     line-height: 1.7;
     margin-top: 10px;
@@ -68,7 +64,6 @@
 
   a {
     color: $luna-ink;
-    @extend .fs-9px;
     font-weight: 700;
     overflow-wrap: anywhere;
     text-decoration: none;
@@ -84,7 +79,6 @@
 
   h3 {
     color: $luna-ink;
-    @extend .fs-18px;
     font-weight: 650;
     margin: 12px 0 4px;
   }
@@ -92,7 +86,6 @@
 
 .contact-required-note {
   color: $luna-muted;
-  @extend .fs-8px;
   margin: 0;
 
   span,
@@ -112,7 +105,6 @@
 
   label {
     color: #526158;
-    @extend .fs-8px;
     font-weight: 700;
   }
 
@@ -127,7 +119,6 @@
     border-radius: 3px;
     color: $luna-ink;
     display: block;
-    @extend .fs-12px;
     font-weight: 400;
     margin-top: 8px;
     outline: none;
@@ -165,7 +156,6 @@
 
   p {
     color: $luna-muted;
-    @extend .fs-8px;
     line-height: 1.5;
     margin: 0;
     max-width: 180px;
@@ -180,7 +170,6 @@
   color: $luna-white;
   cursor: pointer;
   display: inline-flex;
-  @extend .fs-11px;
   font-weight: 700;
   gap: 12px;
   justify-content: center;
@@ -229,7 +218,6 @@
 
   p {
     color: $luna-muted;
-    @extend .fs-10px;
     line-height: 1.65;
     margin: 16px 0 0;
   }
@@ -237,7 +225,6 @@
 
 .site-footer-heading {
   color: $luna-ink;
-  @extend .fs-8px;
   letter-spacing: 0.14em;
   margin: 0 0 16px;
   text-transform: uppercase;
@@ -254,7 +241,6 @@
 .site-footer-office a,
 .site-footer-office address {
   color: $luna-muted;
-  @extend .fs-9px;
   font-style: normal;
   line-height: 1.7;
   margin: 0 0 9px;
@@ -278,7 +264,6 @@
   p,
   a {
     color: $luna-muted;
-    @extend .fs-8px;
     margin: 0;
     text-decoration: none;
   }

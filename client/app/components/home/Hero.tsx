@@ -10,19 +10,19 @@ export default function Hero() {
       <div className="hero-inner">
 
         <div className="hero-copy">
-          <p className="hero-eyebrow">
+          <p className="hero-eyebrow fs-11px">
             <span aria-hidden="true" />
             Luna IT Solutions — Nagercoil, Tamil Nadu, India
           </p>
 
-          <h1 className="hero-title">
+          <h1 className="hero-title fs-hero-title">
             <span>Boost Efficiency</span>
             <span>and Productivity</span>
             <span>with Our</span>
             <span className="hero-title-accent">ERP Solutions</span>
           </h1>
 
-          <p className="hero-description">
+          <p className="hero-description fs-15px">
             Our team of experts is dedicated to delivering ERP solutions for
             every industry – crafted to meet your unique business needs.
           </p>
@@ -44,7 +44,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          <p className="hero-footnote">
+          <p className="hero-footnote fs-10px">
             <span aria-hidden="true" />
             A connected system built around your operation.
           </p>
@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="hero-product" id="product">
           <ErpPreview />
         </div>
-          <p className="hero-caption">
+          <p className="hero-caption fs-10px">
             <span aria-hidden="true" />
             One clear view of your operations
           </p>

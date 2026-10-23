@@ -1,7 +1,6 @@
 @use "sass:math";
 @use "../../abstracts/variables" as *;
 @use "../../include/fontSize" as *;
-
 $map-w: 1211;
 @function cq($px) {
   @return math.div($px, $map-w) * 100cqw;
@@ -31,7 +30,6 @@ $map-w: 1211;
 
   h2 {
     color: $luna-ink;
-    @extend .fs-system-title;
     font-weight: 650;
     letter-spacing: -0.045em;
     line-height: 1.08;
@@ -42,7 +40,6 @@ $map-w: 1211;
 
 .solutions-showcase-eyebrow {
   color: $luna-green;
-  @extend .fs-8px;
   font-weight: 700;
   letter-spacing: 0.15em;
   margin: 0;
@@ -51,7 +48,6 @@ $map-w: 1211;
 
 .solutions-showcase-copy {
   color: $luna-muted;
-  @extend .fs-13px;
   line-height: 1.65;
   margin: 18px 0 0;
   max-width: 360px;
@@ -67,7 +63,6 @@ $map-w: 1211;
 
   li {
     color: $luna-muted;
-    @extend .fs-9px;
     font-weight: 600;
     padding: 12px 8px;
     text-align: center;

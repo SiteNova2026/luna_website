@@ -22,7 +22,6 @@
 
 .full-service-eyebrow {
   color: $luna-green;
-  @extend .fs-9px;
   font-weight: 700;
   letter-spacing: 0.14em;
   line-height: 1.5;
@@ -32,7 +31,6 @@
 
 .full-service-intro h2 {
   color: $luna-ink;
-  @extend .fs-connected-title;
   font-weight: 650;
   letter-spacing: -0.04em;
   line-height: 1.08;
@@ -42,7 +40,6 @@
 
 .full-service-summary {
   color: $luna-muted;
-  @extend .fs-13px;
   line-height: 1.7;
   margin: 18px 0 0;
   max-width: 400px;
@@ -66,14 +63,12 @@
 
 .full-service-number {
   color: $luna-teal;
-  @extend .fs-21px;
   font-weight: 600;
   line-height: 1.2;
 }
 
 .full-service-copy h3 {
   color: $luna-ink;
-  @extend .fs-17px;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.3;
@@ -82,7 +77,6 @@
 
 .full-service-copy p {
   color: $luna-muted;
-  @extend .fs-13px;
   line-height: 1.65;
   margin: 8px 0 0;
   max-width: 720px;
@@ -92,7 +86,6 @@
   align-items: center;
   color: $luna-green;
   display: flex;
-  @extend .fs-8px;
   font-weight: 700;
   gap: 7px;
   margin: 0 0 7px;

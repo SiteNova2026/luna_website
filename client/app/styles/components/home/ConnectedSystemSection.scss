@@ -36,7 +36,6 @@
 
   > p {
     color: #087f70;
-    @extend .fs-9px;
     font-weight: 700;
     letter-spacing: 0.17em;
     margin: 0;
@@ -45,7 +44,6 @@
 
   h2 {
     color: $luna-ink;
-    @extend .fs-connected-title;
     font-weight: 650;
     letter-spacing: -0.035em;
     line-height: 1.03;
@@ -162,7 +160,6 @@
 
   div > p {
     color: #087f70;
-    @extend .fs-9px;
     font-weight: 700;
     letter-spacing: 0.16em;
     margin: 0 0 8px;
@@ -171,14 +168,12 @@
 
   h3 {
     color: $luna-ink;
-    @extend .fs-17px;
     font-weight: 650;
     margin: 0;
   }
 
   > p {
     color: $luna-muted;
-    @extend .fs-13px;
     line-height: 1.75;
     margin: 0;
     max-width: 500px;

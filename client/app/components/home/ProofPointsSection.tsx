@@ -19,14 +19,14 @@ export default function ProofPointsSection() {
         <ul className="proof-metrics">
           {metrics.map((metric) => (
             <li className="proof-metric" key={metric.label}>
-              <strong>{metric.value}</strong>
-              <span>{metric.label}</span>
+              <strong className="fs-proof-stat">{metric.value}</strong>
+              <span className="fs-11px">{metric.label}</span>
             </li>
           ))}
         </ul>
 
         <div className="proof-clients">
-          <p>Trusted by</p>
+          <p className="fs-9px">Trusted by</p>
           <ul aria-label="Luna ERP clients">
             {clients.map((client) => (
               <li key={client.alt}>

@@ -1,5 +1,4 @@
 @use "../../abstracts/variables" as *;
-@use "../../include/fontSize" as *;
 
 .wordmark {
   display: block;
@@ -10,7 +9,6 @@
 .navLink,
 .activeNav {
   color: $luna-nav-muted;
-  @extend .fs-11px;
   font-weight: 600;
   text-decoration: none;
   transition: color 160ms ease;

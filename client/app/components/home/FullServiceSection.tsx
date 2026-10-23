@@ -28,11 +28,11 @@ export default function FullServiceSection() {
     <section className="full-service" id="services" aria-labelledby="full-service-title">
       <div className="full-service-inner">
         <div className="full-service-intro">
-          <p className="full-service-eyebrow">
+          <p className="full-service-eyebrow fs-9px">
             From first conversation to what comes next
           </p>
-          <h2 id="full-service-title">Full-Service ERP Agency</h2>
-          <p className="full-service-summary">
+          <h2 id="full-service-title" className="fs-connected-title">Full-Service ERP Agency</h2>
+          <p className="full-service-summary fs-13px">
             A practical partner at every stage of your ERP journey.
           </p>
         </div>
@@ -40,17 +40,17 @@ export default function FullServiceSection() {
         <ol className="full-service-list">
           {services.map((service, index) => (
             <li className="full-service-item" key={service.title}>
-              <span className="full-service-number" aria-hidden="true">
+              <span className="full-service-number fs-21px" aria-hidden="true">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <div className="full-service-copy">
                 {index > 0 ? (
-                  <span className="full-service-next">
+                  <span className="full-service-next fs-8px">
                     Then <ArrowRight size={12} aria-hidden="true" />
                   </span>
                 ) : null}
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
+                <h3 className="fs-17px">{service.title}</h3>
+                <p className="fs-13px">{service.description}</p>
               </div>
             </li>
           ))}

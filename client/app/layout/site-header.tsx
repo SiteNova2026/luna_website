@@ -12,7 +12,7 @@ function BrandLink() {
 
 function NavigationLink({ label, active = false }: { label: string; active?: boolean }) {
   return (
-    <a className={active ? "activeNav" : "navLink"} href={`#${label.toLowerCase()}`}>
+    <a className={`${active ? "activeNav" : "navLink"} fs-11px`} href={`#${label.toLowerCase()}`}>
       {label}
     </a>
   );

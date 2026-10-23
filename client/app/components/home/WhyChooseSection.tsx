@@ -28,11 +28,11 @@ export default function WhyChooseSection() {
     <section className="why-luna" id="why-luna" aria-labelledby="why-luna-title">
       <div className="why-luna-inner">
         <div className="why-luna-intro">
-          <p className="why-luna-eyebrow">Why choose Luna ERP?</p>
-          <h2 id="why-luna-title">
+          <p className="why-luna-eyebrow fs-9px">Why choose Luna ERP?</p>
+          <h2 id="why-luna-title" className="fs-connected-title">
             Expertise in ERP, Customization and Development
           </h2>
-          <p className="why-luna-summary">
+          <p className="why-luna-summary fs-13px">
             Our team consists of certified experts with years of experience.
           </p>
           <Link className="why-luna-cta btn btn-primary" href="#contact">
@@ -44,12 +44,12 @@ export default function WhyChooseSection() {
         <ol className="why-luna-list">
           {reasons.map((reason, index) => (
             <li className="why-luna-item" key={reason.title}>
-              <span className="why-luna-number" aria-hidden="true">
+              <span className="why-luna-number fs-12px" aria-hidden="true">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <div className="why-luna-copy">
-                <h3>{reason.title}</h3>
-                <p>{reason.description}</p>
+                <h3 className="fs-17px">{reason.title}</h3>
+                <p className="fs-13px">{reason.description}</p>
               </div>
               <ArrowRight className="why-luna-arrow" size={17} aria-hidden="true" />
             </li>

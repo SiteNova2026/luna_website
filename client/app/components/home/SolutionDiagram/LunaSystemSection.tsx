@@ -27,8 +27,8 @@ export function LunaSystemSection() {
       >
         <div className="industries-heading">
           <div>
-            <p>Industry-ready. Business-specific.</p>
-            <h2 id="industries-title">One integrated system,<br/>
+            <p className="luna-eyebrow fs-luna-eyebrow">Industry-ready. Business-specific.</p>
+            <h2 id="industries-title" className="luna-heading fs-luna-title">One integrated system,<br/>
                connected across every process</h2>
           </div>
         </div>

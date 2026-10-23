@@ -120,8 +120,8 @@ export function LunaDiagram() {
         <span className="luna-center-icon">
           <LunaCubeIcon className="luna-cube" />
         </span>
-        <span className="luna-center-title">Luna ERP</span>
-        <span className="luna-center-subtitle">One connected system</span>
+        <span className="luna-center-title fs-luna-center-title">Luna ERP</span>
+        <span className="luna-center-subtitle fs-luna-center-note">One connected system</span>
       </div>
 
       <ul className="luna-modules">
@@ -145,7 +145,7 @@ export function LunaDiagram() {
               style={{ '--delay': `${680 + index * 45}ms` } as CSSProperties}
             >
               <span className="luna-dot" aria-hidden="true" />
-              <span className="luna-card-label">{module.label}</span>
+              <span className="luna-card-label fs-luna-card-label">{module.label}</span>
             </div>
           </li>
         ))}

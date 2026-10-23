@@ -9,9 +9,9 @@ export default function SolutionsShowcase() {
         <div className="solutions-showcase-heading">
           <div>
             <p className="solutions-showcase-eyebrow">One product, every module</p>
-            <h2 id="solutions-title">Best ERP Solutions for Your Business</h2>
+            <h2 id="solutions-title" className="fs-system-title">Best ERP Solutions for Your Business</h2>
           </div>
-          <p className="solutions-showcase-copy">
+          <p className="solutions-showcase-copy fs-13px">
             All in one integrated system, with real-time data insights and automation.
             Switch modules without leaving Luna.
           </p>
@@ -19,7 +19,7 @@ export default function SolutionsShowcase() {
 
         <ul className="solutions-showcase-modules" aria-label="Luna ERP modules">
           {modules.map((module) => (
-            <li key={module}>{module}</li>
+            <li key={module} className="fs-9px">{module}</li>
           ))}
         </ul>
 

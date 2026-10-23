@@ -13,10 +13,6 @@ import {
   WhyChooseSection,
 } from "./components/home";
 
-/**
- * Declarative section order for the landing page.
- * Add, remove, or reorder sections here without touching JSX.
- */
 const homeSections: readonly ComponentType[] = [
   Hero,
   ConnectedSystemSection,

@@ -123,7 +123,7 @@
   bottom: 17px;
   color: $luna-muted;
   display: flex;
-  @extend .fs-9px;
+  
   gap: 9px;
   position: absolute;
   right: max(4vw, calc((100vw - 1280px) / 2));
@@ -167,7 +167,7 @@
     border-radius: 7px;
     box-shadow: 0 24px 50px -20px $luna-shadow, 0 2px 6px $luna-shadow-soft;
     color: $luna-ink;
-    @extend .fs-9px;
+    
     overflow: hidden;
     position: relative;
   }
@@ -188,7 +188,7 @@
   }
 
   .brand {
-    @extend .fs-10px;
+   
   }
 
   .logo {
@@ -215,7 +215,7 @@
     background: $luna-line;
     border-radius: 50%;
     display: inline-flex;
-    @extend .fs-6px;
+    
     font-weight: 600;
     height: 16px;
     justify-content: center;
@@ -262,7 +262,7 @@
   .side-foot {
     color: $luna-muted;
     display: grid;
-    @extend .fs-6px;
+    
     letter-spacing: 0.08em;
     padding: 0 8px 4px;
   }
@@ -281,7 +281,6 @@
 
     h3 {
       color: $luna-ink-strong;
-      @extend .fs-12px;
       font-weight: 500;
       margin: 4px 0 0;
     }
@@ -291,7 +290,7 @@
   .chart-head span,
   .records th {
     @include overline;
-    @extend .fs-7px;
+    
   }
 
   .select {
@@ -300,7 +299,7 @@
     border-radius: 4px;
     color: $luna-muted;
     font: inherit;
-    @extend .fs-8px;
+    
     padding: 5px 10px;
   }
 
@@ -320,23 +319,22 @@
 
     span {
       color: $luna-muted;
-      @extend .fs-7-5px;
     }
 
     strong {
       color: $luna-ink-strong;
-      @extend .fs-15px;
+      
       font-weight: 600;
     }
 
     small {
-      @extend .fs-11px;
+      
       font-weight: 500;
     }
 
     em {
       color: $luna-muted;
-      @extend .fs-7px;
+      
       font-style: normal;
     }
 
@@ -346,7 +344,7 @@
 
     small.critical {
       color: $luna-amber-dark;
-      @extend .fs-8px;
+      
     }
   }
 
@@ -363,7 +361,7 @@
     margin-bottom: 6px;
 
     strong {
-      @extend .fs-8px;
+      
       font-weight: 600;
     }
   }
@@ -378,7 +376,6 @@
   .xaxis {
     color: $luna-faint-light;
     display: flex;
-    @extend .fs-6-5px;
     justify-content: space-between;
     margin-top: 4px;
   }
@@ -418,7 +415,7 @@
   .pill {
     border-radius: 99px;
     display: inline-block;
-    @extend .fs-7px;
+    
     font-weight: 500;
     padding: 2px 7px;
 

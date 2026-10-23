@@ -1,40 +1,57 @@
-import { ArrowRight } from "lucide-react";
-
 const services = [
   {
-    title: "Complete ERP Implementation",
+    title: "Business-Focused Technology",
     description:
-      "We offer end-to-end ERP implementation services, from initial consultation to full-scale deployment. Our experts ensure a smooth transition and provide training to help your team get the most out of your new ERP system.",
+      "We start by understanding your processes and challenges before identifying the right digital solution.",
   },
   {
-    title: "Customization",
+    title: "Connected Operations",
     description:
-      "Every business is unique, and so are its needs. We provide ERP customization services to tailor the software to your specific requirements, ensuring it aligns perfectly with your business processes.",
+      "Bring departments, applications, devices, and information together for better coordination.",
   },
   {
-    title: "Support & Maintenance",
+    title: "Intelligent Innovation",
     description:
-      "We believe in long-term partnerships. Our support and maintenance services ensure that your ERP system runs smoothly and efficiently, with minimal downtime.",
+      "Explore AI-assisted insights, automation, analytics, and smarter workflows.",
   },
-  {
-    title: "On-site Development",
+   {
+    title: "Visual Clarity",
     description:
-      "Need a specific feature or functionality? Our skilled developers can visit your location to develop near you.",
+      "Use interactive 2D and 3D visualization to understand complex business environments and processes.",
   },
+   {
+    title: "Flexible & Scalable Solutions",
+    description:
+      "Build a technology foundation that can adapt as your business expands and its requirements evolve.",
+  },
+   {
+    title: "Integration Without Unnecessary Complexity",
+    description:
+      "Connect compatible systems and reduce information gaps between your business tools.",
+  }
 ];
 
 export default function FullServiceSection() {
   return (
-    <section className="full-service" id="services" aria-labelledby="full-service-title">
+    <section
+      className="full-service"
+      id="services"
+      aria-labelledby="full-service-title"
+    >
       <div className="full-service-inner">
         <div className="full-service-intro">
-          <p className="full-service-eyebrow fs-9px">
-            From first conversation to what comes next
-          </p>
-          <h2 id="full-service-title" className="fs-connected-title">Full-Service ERP Agency</h2>
+          <h2 id="full-service-title" className="fs-connected-title">
+            Why Luna ERP Solutions?
+          </h2>
           <p className="full-service-summary fs-13px">
-            A practical partner at every stage of your ERP journey.
+            Business-Focused Technology
           </p>
+          <p className="full-service-summary fs-13px">
+            We start by understanding your processes and challenges before identifying the right digital solution.
+          </p>
+          <p className="full-service-summary fs-13px">
+            Our approach combines industry knowledge with innovative technology to streamline operations, improve productivity, and support better decision-making. From implementation to ongoing support, we focus on delivering practical solutions that grow with your business. With Luna ERP Solutions, you gain more than a technology provider—you gain a trusted partner in your digital transformation journey.
+            </p>
         </div>
 
         <ol className="full-service-list">
@@ -44,11 +61,6 @@ export default function FullServiceSection() {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <div className="full-service-copy">
-                {index > 0 ? (
-                  <span className="full-service-next fs-8px">
-                    Then <ArrowRight size={12} aria-hidden="true" />
-                  </span>
-                ) : null}
                 <h3 className="fs-17px">{service.title}</h3>
                 <p className="fs-13px">{service.description}</p>
               </div>

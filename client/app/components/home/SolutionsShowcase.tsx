@@ -23,8 +23,8 @@ export default function SolutionsShowcase() {
           ))}
         </ul>
 
-        <div className="solutions-showcase-preview">
-          <ErpPreview
+        <div className="solutions-showcase-preview max-w-[1100px] mx-auto">
+          <ErpPreview name='fs-11px'
             chartGradientId="lunaSolutionsFill"
             ariaLabel="Luna ERP integrated inventory dashboard"
           />

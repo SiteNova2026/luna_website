@@ -33,16 +33,18 @@ const statusClass = {
 } as const;
 
 type ErpPreviewProps = {
+  name: string;
   chartGradientId?: string;
   ariaLabel?: string;
 };
 
 export default function ErpPreview({
+  name,
   chartGradientId = "lunaFill",
   ariaLabel = "Luna ERP inventory dashboard preview",
 }: ErpPreviewProps) {
   return (
-    <div className="erp" role="region" aria-label={ariaLabel}>
+    <div className={`erp ${name}`} role="region" aria-label={ariaLabel}>
       <div className="ghost" aria-hidden="true" />
 
       <div className="window">

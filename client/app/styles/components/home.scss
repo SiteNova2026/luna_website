@@ -15,7 +15,6 @@ $line: #e9efec;
 .navLink,
 .activeNav {
   color: #536159;
-  @extend .fs-11px;
   font-weight: 600;
   text-decoration: none;
   transition: color 160ms ease;
@@ -36,7 +35,6 @@ $line: #e9efec;
   border-radius: 3px;
   color: white;
   display: inline-flex;
-  @extend .fs-12px;
   font-weight: 700;
   gap: 11px;
   justify-content: center;
@@ -65,7 +63,6 @@ $line: #e9efec;
   border-radius: 3px;
   color: #25332b;
   display: inline-flex;
-  @extend .fs-12px;
   font-weight: 700;
   gap: 11px;
   height: 43px;
@@ -84,7 +81,7 @@ $line: #e9efec;
   align-items: center;
   color: $green;
   display: flex;
-  @extend .fs-10px;
+ 
   font-weight: 750;
   gap: 10px;
   letter-spacing: 0.13em;
@@ -107,7 +104,7 @@ $line: #e9efec;
   align-items: center;
   color: #829087;
   display: flex;
-  @extend .fs-10px;
+ 
   gap: 12px;
   margin-top: 38px;
 
@@ -142,7 +139,7 @@ $line: #e9efec;
   background: white;  
   box-shadow: 9px 12px 0 rgba(202, 223, 215, 0.58), 0 12px 32px rgba(45, 72, 59, 0.07);
   color: #38443d;
-  @extend .fs-9px;
+  
   min-width: 0;
   overflow: hidden;
   position: relative;
@@ -169,7 +166,7 @@ $line: #e9efec;
 
 .dashBrand strong {
   color: #344139;
-  @extend .fs-10px;
+ 
 }
 
 .brandMark {
@@ -178,7 +175,7 @@ $line: #e9efec;
   border-radius: 4px;
   color: $green;
   display: inline-flex;
-  @extend .fs-11px;
+  
   height: 19px;
   justify-content: center;
   width: 19px;
@@ -189,7 +186,7 @@ $line: #e9efec;
 }
 
 .teamLabel {
-  @extend .fs-8px;
+  
 }
 
 .avatar {
@@ -198,7 +195,7 @@ $line: #e9efec;
   border-radius: 50%;
   color: #927840;
   display: inline-flex;
-  @extend .fs-7px;
+  
   height: 18px;
   justify-content: center;
   width: 18px;
@@ -228,7 +225,7 @@ $line: #e9efec;
   border-radius: 3px;
   color: #68756e;
   display: flex;
-  @extend .fs-8px;
+  
   gap: 8px;
   min-height: 26px;
   padding: 0 7px;
@@ -236,7 +233,7 @@ $line: #e9efec;
 
   span {
     color: #78867e;
-    @extend .fs-11px;
+    
     text-align: center;
     width: 11px;
   }
@@ -254,7 +251,7 @@ $line: #e9efec;
 
 .sidebarCaption {
   color: #68756d;
-  @extend .fs-7px;
+  
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1.5;
@@ -274,7 +271,7 @@ $line: #e9efec;
 
   h2 {
     color: #38443d;
-    @extend .fs-14px;
+    
     font-weight: 600;
     margin: 5px 0 0;
   }
@@ -282,7 +279,7 @@ $line: #e9efec;
 
 .overline {
   color: #87948c;
-  @extend .fs-7px;
+  
   font-weight: 700;
   letter-spacing: 0.12em;
   margin: 0;
@@ -295,7 +292,7 @@ $line: #e9efec;
   border-radius: 3px;
   color: #748078;
   font: inherit;
-  @extend .fs-7px;
+  
   height: 26px;
   padding: 0 9px;
 }
@@ -318,25 +315,25 @@ $line: #e9efec;
 
   > span {
     color: #77847c;
-    @extend .fs-7px;
+    
   }
 
   > strong {
     color: #344139;
-    @extend .fs-15px;
+    
     font-weight: 700;
     line-height: 1.1;
 
     small {
       color: #b48129;
-      @extend .fs-8px;
+      
       font-weight: 600;
     }
   }
 
   > small {
     color: #839087;
-    @extend .fs-7px;
+    
     white-space: nowrap;
   }
 }
@@ -359,12 +356,12 @@ $line: #e9efec;
 
   strong {
     color: #3e4a42;
-    @extend .fs-8px;
+    
   }
 
   span {
     color: #89948d;
-    @extend .fs-6px;
+    
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
@@ -381,7 +378,7 @@ $line: #e9efec;
 .chartDates {
   color: #8a968e;
   display: flex;
-  @extend .fs-6px;
+  
   justify-content: space-between;
   padding-top: 1px;
 }
@@ -407,7 +404,7 @@ $line: #e9efec;
   border-bottom: 1px solid #e9efec;
   border-top: 1px solid #e9efec;
   color: #89948d;
-  @extend .fs-6px;
+  
   letter-spacing: 0.06em;
   min-height: 21px;
   text-transform: uppercase;
@@ -416,12 +413,12 @@ $line: #e9efec;
 .tableRow {
   border-bottom: 1px solid #f0f3f1;
   color: #68756d;
-  @extend .fs-7px;
+  
   min-height: 21px;
 
   strong {
     color: #3e4a42;
-    @extend .fs-7px;
+    
     font-weight: 600;
   }
 
@@ -433,7 +430,7 @@ $line: #e9efec;
 
   em {
     border-radius: 10px;
-    @extend .fs-6px;
+    
     font-style: normal;
     padding: 3px 6px;
     white-space: nowrap;
@@ -459,7 +456,7 @@ $line: #e9efec;
   align-items: center;
   color: #859189;
   display: flex;
-  @extend .fs-9px;
+  
   gap: 8px;
   margin: 16px 0 0;
 
@@ -476,7 +473,7 @@ $line: #e9efec;
   bottom: 16px;
   color: #68756d;
   display: flex;
-  @extend .fs-9px;
+  
   gap: 9px;
   position: absolute;
   right: max(5vw, calc((100vw - 1240px) / 2 + 48px));
@@ -506,21 +503,12 @@ $line: #e9efec;
 }
 
 @media (max-width: 640px) {
-  .headerCta {
-    @extend .fs-11px-640;
+  .headerCta {    
     height: 35px;
     padding: 0 10px;
   }
 
-  .wordmark {
-    @extend .fs-21px-640;
-  }
 
-  .eyebrow {
-    align-items: flex-start;
-    @extend .fs-8px-640;
-    letter-spacing: 0.1em;
-  }
 
   .productStage {
     margin: 0 -6px;
@@ -531,58 +519,23 @@ $line: #e9efec;
     box-shadow: 5px 7px 0 rgba(202, 223, 215, 0.58), 0 12px 24px rgba(45, 72, 59, 0.06);
   }
 
-  .dashTopbar {
-    height: 37px;
-    padding: 0 8px;
-  }
 
   .dashBrand,
   .teamLabel {
     gap: 5px;
   }
 
-  .teamLabel {
-    @extend .fs-7px-640;
-  }
 
-  .dashBody {
-    grid-template-columns: 27% minmax(0, 1fr);
-    min-height: 310px;
-  }
 
   .sidebar {
     padding: 10px 4px;
   }
 
-  .menuItem {
-    @extend .fs-7px-640;
-    gap: 4px;
-    min-height: 24px;
-    padding: 0 4px;
-
-    span {
-      @extend .fs-9px-640;
-      width: 9px;
-    }
-  }
 
   .workspace {
     padding: 12px 8px 10px;
   }
 
-  .statCard {
-    gap: 3px;
-    padding: 7px 5px;
-
-    > span,
-    > small {
-      @extend .fs-6px-640;
-    }
-
-    > strong {
-      @extend .fs-12px-640;
-    }
-  }
 
   .tableHeader,
   .tableRow {
@@ -590,28 +543,8 @@ $line: #e9efec;
     grid-template-columns: 1fr 0.85fr 0.56fr 0.52fr;
   }
 
-  .tableRow {
-    @extend .fs-6px-640;
 
-    strong {
-      @extend .fs-6px-640;
-    }
 
-    em {
-      @extend .fs-5px-640;
-      padding: 2px 4px;
-    }
-  }
-
-  .tableHeader {
-    @extend .fs-5px-640;
-  }
-
-  .mintDisc {
-    height: 80%;
-    right: -14%;
-    top: -5%;
-  }
 
   .pageIndex {
     display: none;

@@ -3,24 +3,42 @@ import { ArrowRight } from "lucide-react";
 
 const reasons = [
   {
-    title: "Customized Solutions",
-    description: "We tailor our ERP solutions to meet your specific business needs.",
+    title: "WhatsApp Integration",
+    description: "Connect with your customers seamlessly through WhatsApp integration.Customer enquiries, notifications, order updates, and business communication.",
   },
   {
-    title: "Local Presence",
-    description:
-      "As a company based in India, we offer solutions that are relevant to the local market.",
+    title: "Email Integration",
+    description: "Automated emails, quotations, invoices, reminders, and internal notifications.",
   },
   {
-    title: "Customer-Centric Approach",
-    description:
-      "We prioritize our clients' needs and work closely with them to ensure their success.",
+    title: "Social Media Integration",
+    description: "Lead capture, campaign workflows, and customer engagement where supported.",
   },
   {
-    title: "Continuous Support",
-    description:
-      "Our relationship with clients extends beyond implementation, with ongoing support and maintenance services.",
+    title: "GPS & Fleet Tracking",
+    description: "Vehicle locations, trip monitoring, route visibility, and fleet operations.",
   },
+  {
+    title: "Biometric Systems",
+    description: "Attendance, employee time tracking, and workforce management.",
+  },
+  {
+    title: "Payment & Banking Integration",
+    description: "Supported payment gateways, transaction workflows, and financial data exchange.",
+  },
+  {
+    title: "Barcode, QR Code & IoT",
+    description: "Product identification, stock operations, connected devices, and equipment data.",
+  },
+  {
+    title: "Third-Party APIs",
+    description: "Connect external software, websites, customer portals, e-commerce platforms, and cloud applications.",
+  },
+  {
+    title: "Custom Integrations",
+    description: "Build connections based on your business processes and technical requirements.",
+  }
+
 ];
 
 export default function WhyChooseSection() {
@@ -28,17 +46,12 @@ export default function WhyChooseSection() {
     <section className="why-luna" id="why-luna" aria-labelledby="why-luna-title">
       <div className="why-luna-inner">
         <div className="why-luna-intro">
-          <p className="why-luna-eyebrow fs-9px">Why choose Luna ERP?</p>
           <h2 id="why-luna-title" className="fs-connected-title">
-            Expertise in ERP, Customization and Development
+           Seamless Integration. One Connected Ecosystem
           </h2>
           <p className="why-luna-summary fs-13px">
             Our team consists of certified experts with years of experience.
           </p>
-          <Link className="why-luna-cta btn btn-primary" href="#contact">
-            Talk to our team
-            <ArrowRight size={16} aria-hidden="true" />
-          </Link>
         </div>
 
         <ol className="why-luna-list">
@@ -51,7 +64,6 @@ export default function WhyChooseSection() {
                 <h3 className="fs-17px">{reason.title}</h3>
                 <p className="fs-13px">{reason.description}</p>
               </div>
-              <ArrowRight className="why-luna-arrow" size={17} aria-hidden="true" />
             </li>
           ))}
         </ol>

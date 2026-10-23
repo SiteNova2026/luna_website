@@ -1,13 +1,19 @@
 import Image from "next/image";
 
-const navigationItems = ['Home', 'Industry Solutions', 'Services', 'About Us', 'Our Project'];
+const navigationItems = [
+  { name: "Home", url: "/" },
+  { name: "Industry Solutions", url: "#industry-solutions" },
+  { name: "Services", url: "/" },
+  { name: "About Us", url: "/" },
+  { name: "Our Project", url: "/" }
+];
 const currentYear = new Date().getFullYear();
 export default function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="site-footer-inner">
         <div className="site-footer-brand">
-          <a href="#home" aria-label="Luna home">
+          <a href="/" aria-label="Luna home">
             <Image src="/images/logo.png" alt="Luna" width={161} height={74} />
           </a>
           <p className="fs-12px">Customized ERP solutions for manufacturing, construction, RMC, and more. One platform for every part of your business.</p>
@@ -16,8 +22,9 @@ export default function SiteFooter() {
         <nav className="site-footer-nav" aria-label="Footer navigation">
           <p className="site-footer-heading fs-12px">Explore</p>
           {navigationItems.map((item) => (
-            <a className="fs-12px" href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} key={item}>
-              {item}
+
+            <a className="fs-12px" href={item.url} key={item.name}>
+              {item.name}
             </a>
           ))}
         </nav>

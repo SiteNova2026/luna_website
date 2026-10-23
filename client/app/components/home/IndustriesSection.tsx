@@ -78,7 +78,7 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="industries-section" id="industries" aria-labelledby="industries-title">
+    <section className="industries-section" id="industry-solutions" aria-labelledby="industries-title">
       <div className="industries-heading">
         <div>
           <p className="industries-eyebrow fs-9px">Industry-ready. Business-specific.</p>

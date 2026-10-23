@@ -1,28 +1,40 @@
-import Image from "next/image";
+"use client";
 
-const navigationItems = ["Industry Solutions", "Services", "About Us", "Our Project"];
+import Image from "next/image";
+import { useState } from "react";
+
+const navigationItems = [
+  { name: "Industry Solutions", url: "#industry-solutions" },
+  { name: "Services", url: "/" },
+  { name: "About Us", url: "/" },
+  { name: "Our Project", url: "/" }
+];
 
 function BrandLink() {
   return (
-    <a href="#home" aria-label="Luna home">
+    <a href="/" aria-label="Luna home">
       <Image src="/images/logo.png" alt="" width={161} height={74} priority className="wordmark" />
     </a>
   );
 }
 
-function NavigationLink({ label, active = false }: { label: string; active?: boolean }) {
+function NavigationLink({ label, url, active, onClick }: { label: string; url: string; active: boolean; onClick: () => void }) {
   return (
-    <a className={`${active ? "activeNav" : "navLink"} fs-11px`} href={`#${label.toLowerCase()}`}>
+    <a className={`${active ? "activeNav" : "navLink"} fs-11px`} href={url} onClick={onClick}>
       {label}
     </a>
   );
 }
 
 function MainNavigation() {
+  const [activeItem, setActiveItem] = useState("Home");
+
   return (
     <nav className="hidden items-center gap-7 md:flex" aria-label="Main navigation">
-      <NavigationLink label="Home" active />
-      {navigationItems.map((item) => <NavigationLink key={item} label={item} />)}
+      <NavigationLink label="Home" url="/" active={activeItem === "Home"} onClick={() => setActiveItem("Home")} />
+      {navigationItems.map((item) => (
+        <NavigationLink key={item.name} label={item.name} url={item.url} active={activeItem === item.name} onClick={() => setActiveItem(item.name)} />
+      ))}
       <a className="headerCta btn btn-primary btn-compact fs-11px" href="#contact">
       Talk To Us <span aria-hidden="true">→</span>
     </a>

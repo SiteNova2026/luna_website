@@ -35,7 +35,7 @@ export default function FullServiceSection() {
   return (
     <section
       className="full-service"
-      id="services"
+      id="why-choose"
       aria-labelledby="full-service-title"
     >
       <div className="full-service-inner">

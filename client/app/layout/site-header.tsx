@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { useState } from "react";
 
 const navigationItems = [
@@ -13,7 +11,7 @@ const navigationItems = [
 function BrandLink() {
   return (
     <a href="/" aria-label="Luna home">
-      <Image src="/images/logo.png" alt="" width={161} height={74} priority className="wordmark" />
+      <img src="/images/logo.png" alt="" width={161} height={74} className="wordmark" />
     </a>
   );
 }

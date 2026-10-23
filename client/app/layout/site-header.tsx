@@ -95,7 +95,7 @@ export function SiteHeader() {
           <BrandLink />
           <MainNavigation activeItem={activeItem} onNavigate={setActiveItem} />
           <button
-            className="mobileMenuToggle md:hidden"
+            className="mobileMenuToggle flex md:hidden"
             type="button"
             aria-label={isMobileMenuOpen ? "Close navigation" : "Open navigation"}
             aria-expanded={isMobileMenuOpen}

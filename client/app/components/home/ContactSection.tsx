@@ -40,6 +40,9 @@ export default function ContactSection() {
           <div className="contact-office">
             <p className="contact-label fs-12px">Head Office</p>
             <address className="fs-12px">No 6, Victoria Nagar, Nanjikottai Road,<br />Thanjavur-613006, Tamil Nadu, India.</address>
+              <p>
+              <strong>GSTIN:</strong> 33AANFL3214C1ZT
+            </p>
           </div>
 
           <div className="contact-direct">

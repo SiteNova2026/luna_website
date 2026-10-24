@@ -8,7 +8,7 @@ const reasons = [
     description: "Automated emails, quotations, invoices, reminders, and internal notifications.",
   },
   {
-    title: "Social Media Integration",
+    title: "Weighbridge Integration",
     description: "Lead capture, campaign workflows, and customer engagement where supported.",
   },
   {

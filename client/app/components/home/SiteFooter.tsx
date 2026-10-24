@@ -32,6 +32,9 @@ export default function SiteFooter() {
         <div className="site-footer-office">
           <p className="site-footer-heading fs-12px">Head Office</p>
           <address className="fs-12px">No 6, Victoria Nagar, Nanjikottai Road,<br />Thanjavur-613006, Tamil Nadu, India.</address>
+          <p>
+          <strong>GSTIN:</strong> 33AANFL3214C1ZT
+           </p>
           <a className="fs-12px lowercase" href="mailto:lunaerpsolutions@gmail.com">lunaerpsolutions@gmail.com</a>
           <a className="fs-12px" href="tel:+917708926698">+91 7708926698</a>
           <a className="fs-12px" href="tel:+918428280089">+91 8428280089</a>
@@ -39,7 +42,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="site-footer-bottom">
-        <p className="fs-12px">{currentYear} © Luna IT Solutions. All rights reserved.</p>
+        <p className="fs-12px">{currentYear} © Luna ERP  Solutions. All rights reserved.</p>
         <a className="fs-12px" href="#home">Back to top ↑</a>
       </div>
     </footer>

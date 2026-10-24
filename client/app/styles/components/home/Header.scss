@@ -3,7 +3,12 @@
 .wordmark {
   display: block;
   height: auto;
-  width: 92px;
+  width: 120px;
+}
+@media (max-width: 768px) {
+  .wordmark {
+    width: 92px;
+  }
 }
 
 .mobileMenuToggle {

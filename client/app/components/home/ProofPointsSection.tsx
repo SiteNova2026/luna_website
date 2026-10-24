@@ -4,7 +4,7 @@ const clients = [
   { src: "/images/crd.jpeg", alt: "CRD Infracon Limited" },
   { src: "/images/stem.jpeg", alt: "STEM Group of Company" },
   { src: "/images/astro.jpeg", alt: "Astro Bridge International" },
-  { src: "/images/taste.jpeg", alt: "Taste Pizza" },
+  { src: "/images/tcp.png", alt: "Tcp Limited" },
 ];
 export default function ProofPointsSection() {
   return (
